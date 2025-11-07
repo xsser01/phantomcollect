@@ -3,11 +3,12 @@ from setuptools import setup, find_packages
 setup(
     name="phantomcollect",
     version="1.0.0",
-    author="xsser_01",
-    author_email="",  # اتركه فارغ أو ضع إيميلك
+    author="xsser01",
+    author_email="psosoej210@gmail.com",
     description="Advanced Stealth Web Data Collection Framework",
-    long_description="PhantomCollect - Advanced web data collection tool for security research",
-    url="https://github.com/xsser_01/phantomcollect",  # ⬅️ رابط GitHub المستقبلي
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/xsser01/phantomcollect",  # ✅ الرابط المضاف
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     package_data={
