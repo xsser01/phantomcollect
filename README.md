@@ -72,7 +72,7 @@ This tool is for educational and authorized security testing purposes only. User
 
 👨‍💻 Developer
 
-xsser_01 - Security Researcher
+xsser01 - Security Researcher
 
 📄 License
 
