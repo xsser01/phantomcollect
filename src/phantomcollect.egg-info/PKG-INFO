@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: phantomcollect
+Version: 1.0.0
+Summary: Advanced Stealth Web Data Collection Framework
+Home-page: https://github.com/xsser_01/phantomcollect
+Author: xsser_01
+Author-email: 
+Keywords: security,web,data-collection,penetration-testing
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Requires-Python: >=3.6
+License-File: LICENSE
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+PhantomCollect - Advanced web data collection tool for security research

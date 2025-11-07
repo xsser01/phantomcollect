@@ -1,0 +1,69 @@
+{
+  "timestamp": "2025-11-07T13:48:18.943Z",
+  "collectedData": {
+    "basicInfo": {
+      "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36",
+      "platform": "Linux aarch64",
+      "vendor": "Google Inc.",
+      "appName": "Netscape",
+      "appVersion": "5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Mobile Safari/537.36",
+      "language": "en-US",
+      "languages": [
+        "en-US"
+      ]
+    },
+    "screenInfo": {
+      "width": 582,
+      "height": 1293,
+      "availWidth": 582,
+      "availHeight": 1293,
+      "colorDepth": 24,
+      "pixelDepth": 24
+    },
+    "locationInfo": {
+      "timezone": "Africa/Algiers",
+      "timezoneOffset": -60
+    },
+    "networkInfo": {
+      "effectiveType": "4g",
+      "downlink": 9,
+      "rtt": 0,
+      "saveData": false
+    },
+    "batteryInfo": {
+      "charging": false,
+      "level": 44,
+      "chargingTime": null,
+      "dischargingTime": 1
+    },
+    "hardwareInfo": {
+      "hardwareConcurrency": 8,
+      "deviceMemory": 8,
+      "maxTouchPoints": 5
+    },
+    "privacyInfo": {
+      "cookieEnabled": true,
+      "doNotTrack": null,
+      "pdfViewerEnabled": false,
+      "webdriver": false
+    },
+    "gpsError": "User denied Geolocation",
+    "publicIP": "154.255.120.242",
+    "ipGeoInfo": {
+      "status": "success",
+      "country": "Algeria",
+      "countryCode": "DZ",
+      "region": "31",
+      "regionName": "Oran",
+      "city": "Bir el Djir",
+      "zip": "31023",
+      "lat": 35.72,
+      "lon": -0.545,
+      "timezone": "Africa/Algiers",
+      "isp": "Telecom Algeria",
+      "org": "new",
+      "as": "AS36947 Telecom Algeria",
+      "query": "154.255.120.242"
+    }
+  }
+}

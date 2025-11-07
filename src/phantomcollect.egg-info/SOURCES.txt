@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/phantomcollect/__init__.py
+src/phantomcollect/core.py
+src/phantomcollect.egg-info/PKG-INFO
+src/phantomcollect.egg-info/SOURCES.txt
+src/phantomcollect.egg-info/dependency_links.txt
+src/phantomcollect.egg-info/entry_points.txt
+src/phantomcollect.egg-info/top_level.txt
+src/phantomcollect/templates/collector.html
