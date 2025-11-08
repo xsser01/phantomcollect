@@ -82,4 +82,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Use Responsibly. Secure Ethically.
 
-📚 Featured on [LibHunt](https://www.libhunt.com/r/phantomcollect)
+
+## 🌐 Featured On
+
+[![SourceForge](https://img.shields.io/badge/Listed%20on-SourceForge-orange?logo=sourceforge)](https://sourceforge.net/projects/phantomcollect/)  
+[![AlternativeTo](https://img.shields.io/badge/Listed%20on-AlternativeTo-blue?logo=alternativeto)](https://alternativeto.net/software/phantomcollect/about/)  
+[![LibHunt](https://img.shields.io/badge/Tracked%20by-LibHunt-green?logo=github)](https://www.libhunt.com/r/phantomcollect)
