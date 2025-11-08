@@ -81,3 +81,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 Use Responsibly. Secure Ethically.
+
+📚 Featured on [LibHunt](https://www.libhunt.com/r/phantomcollect)
