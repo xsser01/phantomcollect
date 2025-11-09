@@ -89,3 +89,4 @@ Use Responsibly. Secure Ethically.
 [![AlternativeTo](https://img.shields.io/badge/Listed%20on-AlternativeTo-blue?logo=alternativeto)](https://alternativeto.net/software/phantomcollect/about/)  
 [![LibHunt](https://img.shields.io/badge/Tracked%20by-LibHunt-green?logo=github)](https://www.libhunt.com/r/phantomcollect)
 [![Launchpad](https://img.shields.io/badge/Listed%20on-Launchpad-blueviolet?logo=launchpad)](https://launchpad.net/phantomcollect)
+[![Codeberg](https://img.shields.io/badge/Listed%20on-Codeberg-blue?logo=git)](https://codeberg.org/xsser01/phantomcollect)
