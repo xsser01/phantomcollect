@@ -6,6 +6,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/xsser01/phantomcollect/badge)](https://www.codefactor.io/repository/github/xsser01/phantomcollect)
 [![Security](https://img.shields.io/badge/Security-Enabled-brightgreen)](https://github.com/xsser01/phantomcollect/security)
 [![Dependabot](https://img.shields.io/badge/dependabot-enabled-brightgreen)](https://github.com/xsser01/phantomcollect/network/updates)
+[![Snyk Security](https://snyk.io/test/github/xsser01/phantomcollect/badge.svg)](https://snyk.io/test/github/xsser01/phantomcollect)
 
 **Advanced Stealth Web Data Collection Framework**
 
