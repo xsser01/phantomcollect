@@ -3,6 +3,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Python](https://img.shields.io/badge/python-3.6%2B-green)
 ![License](https://img.shields.io/badge/license-MIT-orange)
+[![CodeFactor](https://www.codefactor.io/repository/github/xsser01/phantomcollect/badge)](https://www.codefactor.io/repository/github/xsser01/phantomcollect)
 
 **Advanced Stealth Web Data Collection Framework**
 
