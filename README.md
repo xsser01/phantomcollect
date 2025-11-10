@@ -92,3 +92,4 @@ Use Responsibly. Secure Ethically.
 [![LibHunt](https://img.shields.io/badge/Tracked%20by-LibHunt-green?logo=github)](https://www.libhunt.com/r/phantomcollect)
 [![Launchpad](https://img.shields.io/badge/Listed%20on-Launchpad-blueviolet?logo=launchpad)](https://launchpad.net/phantomcollect)
 [![Codeberg](https://img.shields.io/badge/Mirror%20on-Codeberg-blue?logo=git)](https://codeberg.org/xsser01/phantomcollect)
+[![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/xsser01/phantomcollect)
