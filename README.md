@@ -28,7 +28,10 @@ Basic Usage
 ```bash
 phantomcollect
 ```
-
+From AUR (Arch Linux):
+```bash
+yay -S phantomcollect
+```
 Access the Interface
 
 ```
