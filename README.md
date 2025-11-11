@@ -97,4 +97,5 @@ Use Responsibly. Secure Ethically.
 [![Launchpad](https://img.shields.io/badge/Listed%20on-Launchpad-blueviolet?logo=launchpad)](https://launchpad.net/phantomcollect)
 [![Codeberg](https://img.shields.io/badge/Mirror%20on-Codeberg-blue?logo=git)](https://codeberg.org/xsser01/phantomcollect)
 [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/xsser01/phantomcollect)
-[![ArchWiki](https://img.shields.io/badge/docs-ArchWiki-blue?logo=arch-linux&logoColor=white)](https://wiki.archlinux.org/title/Phantomcollect)
+[![ArchWiki](https://img.shields.io/badge/docs-ArchWiki-blue?logo=arch-linux&logoColor=white)](https://wiki.archlinux.org/title/User:Xsser01/Phantomcollect)
+[![Upstract](https://img.shields.io/badge/featured-Upstract-orange?logo=news&logoColor=white)](https://upstract.com/x/42be27b020ecb86f)
