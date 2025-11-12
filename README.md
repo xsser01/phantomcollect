@@ -1,5 +1,3 @@
-![PhantomCollect Banner](https://i.top4top.io/p_3603gxozf0.png)
-
 # 👻 PhantomCollect
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
