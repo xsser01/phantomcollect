@@ -99,4 +99,3 @@ Use Responsibly. Secure Ethically.
 [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/xsser01/phantomcollect)
 [![ArchWiki](https://img.shields.io/badge/docs-ArchWiki-blue?logo=arch-linux&logoColor=white)](https://wiki.archlinux.org/title/User:Xsser01/Phantomcollect)
 [![Upstract](https://img.shields.io/badge/featured-Upstract-orange?logo=news&logoColor=white)](https://upstract.com/x/42be27b020ecb86f)
-[![Hacker News](https://img.shields.io/badge/Hacker%20News-Featured-ff6600)](https://news.ycombinator.com/item?id=45885013)
