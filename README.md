@@ -100,4 +100,3 @@ Use Responsibly. Secure Ethically.
 [![ArchWiki](https://img.shields.io/badge/docs-ArchWiki-blue?logo=arch-linux&logoColor=white)](https://wiki.archlinux.org/title/User:Xsser01/Phantomcollect)
 [![Upstract](https://img.shields.io/badge/featured-Upstract-orange?logo=news&logoColor=white)](https://upstract.com/x/42be27b020ecb86f)
 [![Hacker News](https://img.shields.io/badge/Hacker_News-Discussed-orange?logo=ycombinator&logoColor=white)](https://news.ycombinator.com/item?id=45885013)
-[![SaasHub](https://img.shields.io/badge/SaasHub-Verified-green)](https://www.saashub.com/phantomcollect-alternatives)
