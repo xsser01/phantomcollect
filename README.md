@@ -57,6 +57,104 @@ Custom Port
 phantomcollect --port 8081
 ```
 
+View Collected Data
+
+```bash
+# View all collected data
+sqlite3 victims.db "SELECT * FROM victims;"
+
+# Delete all data
+rm victims.db
+```
+
+📊 Data Collection Schema
+
+Database Structure:
+
+```sql
+-- victims table schema
+CREATE TABLE victims (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    timestamp TEXT,                    -- Visit time
+    ip TEXT,                          -- Public IP address  
+    user_agent TEXT,                  -- Browser/device info
+    location TEXT,                    -- Geographic location
+    device_info TEXT,                 -- Hardware specifications
+    all_data TEXT                     -- Complete JSON data
+);
+```
+
+JSON Data Structure:
+
+```json{
+  "timestamp": "DateTime",
+  "collectedData": {
+    "basicInfo": {
+      "userAgent": "String",
+      "platform": "String", 
+      "vendor": "String",
+      "appName": "String",
+      "appVersion": "String",
+      "language": "String",
+      "languages": ["Array"]
+    },
+    "screenInfo": {
+      "width": "Number",
+      "height": "Number",
+      "availWidth": "Number",
+      "availHeight": "Number", 
+      "colorDepth": "Number",
+      "pixelDepth": "Number"
+    },
+    "locationInfo": {
+      "timezone": "String",
+      "timezoneOffset": "Number"
+    },
+    "networkInfo": {
+      "effectiveType": "String",
+      "downlink": "Number",
+      "rtt": "Number",
+      "saveData": "Boolean"
+    },
+    "batteryInfo": {
+      "charging": "Boolean",
+      "level": "Number",
+      "chargingTime": "Number",
+      "dischargingTime": "Number"
+    },
+    "hardwareInfo": {
+      "hardwareConcurrency": "Number",
+      "deviceMemory": "Number",
+      "maxTouchPoints": "Number"
+    },
+    "privacyInfo": {
+      "cookieEnabled": "Boolean",
+      "doNotTrack": "Boolean",
+      "pdfViewerEnabled": "Boolean",
+      "webdriver": "Boolean"
+    },
+    "gpsError": "String",
+    "publicIP": "String",
+    "ipGeoInfo": {
+      "status": "String",
+      "country": "String",
+      "countryCode": "String",
+      "region": "String",
+      "regionName": "String",
+      "city": "String",
+      "zip": "String",
+      "lat": "Number",
+      "lon": "Number",
+      "timezone": "String",
+      "isp": "String",
+      "org": "String",
+      "as": "String",
+      "query": "String"
+    }
+  }
+}
+```
+
 📁 Data Collected
 
 Data Type Details
