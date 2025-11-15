@@ -5,11 +5,17 @@ pkgdesc="Lightweight stealth web data collection framework for ethical security 
 arch=('any')
 url="https://github.com/xsser01/phantomcollect"
 license=('MIT')
-depends=('python')
+groups=('blackarch' 'blackarch-webapp' 'blackarch-recon')
+depends=('python' 'python-flask' 'python-requests')
 source=("https://github.com/xsser01/phantomcollect/archive/v$pkgver.tar.gz")
 sha256sums=('SKIP')
 
+build() {
+  cd "$pkgname-$pkgver"
+  python -m build --wheel --no-isolation
+}
+
 package() {
   cd "$pkgname-$pkgver"
-  python setup.py install --root="$pkgdir" --optimize=1
+  python -m installer --destdir="$pkgdir" dist/*.whl
 }
