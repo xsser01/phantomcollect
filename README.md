@@ -164,6 +164,8 @@ Network Connection type, speed, IP address
 Browser User agent, languages, timezone
 Battery Level, charging status, timing
 
+🕵️‍♂️ Advanced Timezone Forensics - Detects and analyzes discrepancies between system settings and browser-level timezone data, exposing true geographic origins even when users employ VPNs or attempt location spoofing through system modifications.
+
 ⚠️ Legal Disclaimer
 
 This tool is for educational and authorized security testing purposes only. Users are solely responsible for complying with all applicable laws.
