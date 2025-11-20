@@ -36,6 +36,10 @@ From AUR (Arch Linux):
 ```bash
 yay -S phantomcollect
 ```
+Installation via BlackArch
+```bash
+sudo pacman -S phantomcollect
+```
 Access the Interface
 
 ```
