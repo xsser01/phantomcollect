@@ -38,7 +38,7 @@ yay -S phantomcollect
 ```
 Installation via BlackArch
 ```bash
-sudo pacman -S phantomcollect
+pacman -S phantomcollect
 ```
 Access the Interface
 
